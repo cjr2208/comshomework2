@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> homework 2 KEYBOARDDDDDD </title>
+        <style>
+            body {
+            margin: 0;
+            overflow: hidden; /* prevents scrollbars when images appear */
+            background: #562b2b; /* looks nice with visuals */
+            }
+            h1 {
+                color: #ecc9ec;
+            }
+            h2 {
+                color: #ecc9ec;
+            }
+            label {
+                color: #ecc9ec;
+            }
+  </style>
+    </head>
+    <body>
+        <p></p>
+        <h1>I love music!! </h1>
+        <p><h2>Haven't used css since high school so forgot how to use pls ignore uglyness :))</h2></p>
+        <button class="wave" style="font-size:20px; padding:10px 50px;">sine</button>
+        <button class="wave" style="font-size:20px; padding:10px 50px;">square</button>
+        <button class="wave" style="font-size:20px; padding:10px 50px;">sawtooth</button>
+        <button class="wave" style="font-size:20px; padding:10px 50px;">triangle</button>
+        <p></p>
+        <h1>EDNA MODE:</h1>
+        <button class="mode" style="font-size:20px; padding:10px 50px;">Normal</button>
+        <button class="mode" style="font-size:20px; padding:10px 50px;">Additive Synthesis</button>
+        <button class="mode" style="font-size:20px; padding:10px 50px;">AM</button>
+        <button class="mode" style="font-size:20px; padding:10px 50px;">FM</button>
+        <p></p>
+        <h1>You control now...</h1>
+        <label>In normal mode, add LFO Tremelo: </label> <input id="lfoToggle" type="checkbox">
+        <p></p>
+        <label>Choose the number of partials for your additive synthesis: <span id="partialsLabel">4</span></label> <input id="partialsSlider" type="range" min="1" max="12" value="4">
+        <p></p>
+        <label>Choose your modulator for AM</label><input type="range" min=1 max=1000 oninput="updateFreqAM(this.value)"></input>
+        <p></p>
+        <label>Choose your modulator frequency for FM</label><input type="range" min=1 max=300 oninput="updateFreq(this.value)"></input>
+        <p></p>
+        <label>Choose your index of modulation for FM</label><input type="range" min=1 max=1000 oninput="updateIndex(this.value)"></input>
+
+    </body>
+    <script src="main.js"> </script>
+</html>
